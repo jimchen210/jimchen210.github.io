@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阳宅罗盘 - 隐私政策</title>
+    <style>
+        :root {
+            --text-color: #333333;
+            --bg-color: #ffffff;
+            --primary-color: #b71c1c;
+            --secondary-color: #666666;
+            --border-color: #eeeeee;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        .meta-info {
+            text-align: center;
+            font-size: 14px;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+        /* 繁简切换按钮样式 */
+        .lang-switch {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 4px 12px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #333;
+            transition: all 0.2s;
+        }
+        .lang-switch:hover {
+            background-color: #e0e0e0;
+        }
+        h2 {
+            font-size: 18px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #111111;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 10px;
+        }
+        h3 {
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+        ul {
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 14px;
+            color: var(--secondary-color);
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="page-title">阳宅罗盘 隐私政策</h1>
+    
+    <div class="meta-info">
+        <!-- 切换按钮 -->
+        <button class="lang-switch" id="switchBtn" onclick="toggleLanguage()">繁體中文</button>
+        
+        <span id="date-label"><strong>生效日期：</strong>2026年10月31日</span><br>
+        <span id="dev-label"><strong>开发者：</strong>chenjunwu (个人开发者)</span><br>
+        <span id="email-label"><strong>联系邮箱：</strong><a href="mailto:3645065265@qq.com">3645065265@qq.com</a></span>
+    </div>
+
+    <!-- 简体版内容 -->
+    <div id="content-hans">
+        <h2>一、总则与适用范围</h2>
+        <p>本隐私政策适用于「阳宅罗盘」（以下简称"本应用"）iOS 版本。本应用由 chenjunwu（以下简称"我们"）独立开发并运营。我们深知个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我们致力于维持您对我们的信任，恪守以下原则保护您的个人信息：权责一致原则、目的明确原则、选择同意原则、最少够用原则、确保安全原则、主体参与原则、公开透明原则等。</p>
+        <p>请在使用本应用前，仔细阅读并了解本隐私政策。</p>
+
+        <h2>二、我们如何收集和使用您的个人信息</h2>
+        <p>本应用遵循"本地优先、最少收集"原则。以下是具体的数据处理情况：</p>
+        <h3>2.1 位置信息</h3>
+        <ul>
+            <li><span class="highlight">收集内容</span>：设备 GPS 经纬度（用于计算当地磁偏角与真北方向）。</li>
+            <li><span class="highlight">使用目的</span>：仅用于罗盘页面的真北方向校准与磁偏角修正。我们不会将您的位置信息上传至任何服务器，所有计算均在您的设备本地完成。</li>
+            <li><span class="highlight">存储期限</span>：位置数据仅在应用运行期间缓存于设备内存，应用关闭即清除，不会持久化存储。</li>
+        </ul>
+        <h3>2.2 相机与相册权限</h3>
+        <ul>
+            <li><span class="highlight">收集内容</span>：您主动选择或拍摄的户型图图片。</li>
+            <li><span class="highlight">使用目的</span>：仅用于在户型图分析页面中进行九宫格叠加、方位标注与罗盘排盘分析。图片不会上传至任何服务器，所有处理均在设备本地完成。</li>
+            <li><span class="highlight">存储期限</span>：户型图仅在您本次使用期间保存在应用沙盒中，卸载应用即删除。</li>
+        </ul>
+        <h3>2.3 您主动输入的宅主与时间信息</h3>
+        <ul>
+            <li><span class="highlight">收集内容</span>：宅主性别、出生年月日时、建房动土时间、流年时间。</li>
+            <li><span class="highlight">使用目的</span>：用于本地推算三元命卦、四柱八字、元运、流年紫白等传统术数算法。</li>
+            <li><span class="highlight">存储期限</span>：仅保存在您的设备本地，不会上传。卸载应用即删除。</li>
+        </ul>
+        <h3>2.4 购买记录</h3>
+        <ul>
+            <li><span class="highlight">收集内容</span>：App 内购买（IAP）的解锁状态。</li>
+            <li><span class="highlight">使用目的</span>：用于验证您是否已解锁专业版功能，以提供对应服务。</li>
+            <li><span class="highlight">存储方式</span>：通过 Apple StoreKit 2 进行验证，购买凭证由 Apple 管理。我们仅在您的设备本地记录"已解锁"状态，不收集您的支付信息。</li>
+        </ul>
+        <h3>2.5 我们不会收集的信息</h3>
+        <ul>
+            <li>我们不会收集您的姓名、手机号码、通讯录、短信、健康数据、生物识别信息。</li>
+            <li>我们不会使用任何第三方广告 SDK、统计 SDK 或追踪工具。</li>
+            <li>我们不会将您的任何数据出售或共享给第三方。</li>
+        </ul>
+
+        <h2>三、我们如何使用 Cookie 和同类技术</h2>
+        <p>本应用为原生 iOS 应用，不使用 Cookie。我们仅使用本地存储（UserDefaults）在您的设备本地存储以下偏好设置：</p>
+        <ul>
+            <li>语言选择（简体 / 繁体）</li>
+            <li>罗盘测量基准偏好（真北 / 磁北）</li>
+            <li>专业版解锁状态</li>
+        </ul>
+        <p>上述数据均仅存储在您的设备本地，不会上传。</p>
+
+        <h2>四、我们如何共享、转让、公开披露您的个人信息</h2>
+        <h3>4.1 共享</h3>
+        <p>我们不会与任何公司、组织和个人共享您的个人信息，但以下情况除外：</p>
+        <ul>
+            <li>在获取明确同意的情况下共享；</li>
+            <li>根据法律法规规定、诉讼争议解决需要，或行政、司法等有权机关依法提出的要求。</li>
+        </ul>
+        <h3>4.2 转让</h3>
+        <p>我们不会将您的个人信息转让给任何公司、组织和个人，但以下情况除外：</p>
+        <ul>
+            <li>在获取明确同意的情况下转让；</li>
+            <li>在涉及合并、收购或破产清算时，如涉及到个人信息转让，我们会要求新的持有您个人信息的公司、组织继续受此隐私政策的约束。</li>
+        </ul>
+        <h3>4.3 公开披露</h3>
+        <p>我们仅会在以下情况下，公开披露您的个人信息：</p>
+        <ul>
+            <li>获得您明确同意后；</li>
+            <li>基于法律的披露：在法律、法律程序、诉讼或政府主管部门强制性要求的情况下。</li>
+        </ul>
+
+        <h2>五、我们如何保护您的个人信息</h2>
+        <h3>5.1 安全措施</h3>
+        <ul>
+            <li>所有数据处理均在您的设备本地完成，不经过网络传输，从根本上降低了数据泄露风险。</li>
+            <li>我们采用 iOS 系统提供的安全沙盒机制隔离应用数据。</li>
+            <li>应用内购买通过 Apple StoreKit 2 进行，支付安全由 Apple 保障。</li>
+        </ul>
+        <h3>5.2 安全事件处置</h3>
+        <p>若发生个人信息安全事件，我们将按照法律法规的要求，及时向您告知：安全事件的基本情况和可能的影响、我们已采取或将要采取的处置措施、您可自主防范和降低风险的建议等。我们将及时将事件相关情况以推送通知、邮件等方式告知您。同时，我们还将按照监管部门要求，主动上报个人信息安全事件的处置情况。</p>
+
+        <h2>六、您的权利</h2>
+        <h3>6.1 访问、更正、删除</h3>
+        <p>由于本应用的所有数据均存储在您的设备本地，您可以通过以下方式管理您的数据：</p>
+        <ul>
+            <li><span class="highlight">删除数据</span>：卸载本应用即可删除所有本地存储的数据（包括户型图、宅主信息、偏好设置等）。</li>
+            <li><span class="highlight">撤回授权</span>：您可以在 iOS 系统「设置」→「隐私与安全性」中随时关闭位置、相机、相册权限。关闭后，对应功能将无法使用，但不影响其他功能。</li>
+        </ul>
+        <h3>6.2 注销账户</h3>
+        <p>本应用无账户系统，无需注销。卸载应用即视为放弃所有本地数据。</p>
+        <h3>6.3 响应您的请求</h3>
+        <p>如需行使上述权利或有任何疑问，请通过邮箱 3645065265@qq.com 与我们联系。我们将在 15 个工作日内回复您的请求。</p>
+
+        <h2>七、我们如何处理未成年人的个人信息</h2>
+        <p>本应用面向成年人用户。我们不会主动收集未成年人的个人信息。若您是未满 14 周岁的儿童，请在监护人的陪同下阅读本政策，并在取得监护人同意后使用本应用。</p>
+
+        <h2>八、您的个人信息如何在全球范围转移</h2>
+        <p>由于本应用的所有数据均在您的设备本地处理，不涉及跨境数据传输。若您在中国大陆以外的地区使用本应用，您的数据仍保存在您的设备本地，不会传输至我们的服务器。</p>
+
+        <h2>九、本隐私政策如何更新</h2>
+        <p>我们可能会适时对本隐私政策进行修订。未经您明确同意，我们不会削减您按照本隐私政策所应享有的权利。我们会在本应用内发布对本隐私政策所做的任何变更。对于重大变更，我们还会提供更为显著的通知（如应用内弹窗提示）。</p>
+        <p>本隐私政策所指的重大变更包括但不限于：</p>
+        <ul>
+            <li>我们的服务模式发生重大变化；</li>
+            <li>个人信息共享、转让或公开披露的主要对象发生变化；</li>
+            <li>您参与个人信息处理方面的权利及其行使方式发生重大变化；</li>
+            <li>我们负责处理个人信息安全的责任部门、联络方式及投诉渠道发生变化。</li>
+        </ul>
+
+        <h2>十、如何联系我们</h2>
+        <p>如果您对本隐私政策有任何疑问、意见或建议，通过以下方式与我们联系：</p>
+        <ul>
+            <li><strong>开发者：</strong>chenjunwu</li>
+            <li><strong>联系邮箱：</strong>3645065265@qq.com</li>
+        </ul>
+        <p>我们将在收到您的反馈后 15 个工作日内予以回复。</p>
+    </div>
+
+    <!-- 繁体版内容 (初始隐藏) -->
+    <div id="content-hant" style="display: none;">
+        <h2>一、總則與適用範圍</h2>
+        <p>本隱私政策適用於「陽宅羅盤」（以下簡稱"本應用"）iOS 版本。本應用由 chenjunwu（以下簡稱"我們"）獨立開發並運營。我們深知個人信息對您的重要性，並會盡全力保護您的個人信息安全可靠。我們致力於維持您對我們的信任，恪守以下原則保護您的個人信息：權責一致原則、目的明確原則、選擇同意原則、最少夠用原則、確保安全原則、主體參與原則、公開透明原則等。</p>
+        <p>請在使用本應用前，仔細閱讀並了解本隱私政策。</p>
+
+        <h2>二、我們如何收集和使用您的個人信息</h2>
+        <p>本應用遵循"本地優先、最少收集"原則。以下是具體的數據處理情況：</p>
+        <h3>2.1 位置信息</h3>
+        <ul>
+            <li><span class="highlight">收集內容</span>：設備 GPS 經緯度（用於計算當地磁偏角與真北方向）。</li>
+            <li><span class="highlight">使用目的</span>：僅用於羅盤頁面的真北方向校準與磁偏角修正。我們不會將您的位置信息上傳至任何服務器，所有計算均在您的設備本地完成。</li>
+            <li><span class="highlight">存儲期限</span>：位置數據僅在應用運行期間緩存於設備內存，應用關閉即清除，不會持久化存儲。</li>
+        </ul>
+        <h3>2.2 相機與相冊權限</h3>
+        <ul>
+            <li><span class="highlight">收集內容</span>：您主動選擇或拍攝的戶型圖圖片。</li>
+            <li><span class="highlight">使用目的</span>：僅用於在戶型圖分析頁面中進行九宮格疊加、方位標註與羅盤排盤分析。圖片不會上傳至任何服務器，所有處理均在設備本地完成。</li>
+            <li><span class="highlight">存儲期限</span>：戶型圖僅在您本次使用期間保存在應用沙盒中，卸載應用即刪除。</li>
+        </ul>
+        <h3>2.3 您主動輸入的宅主與時間信息</h3>
+        <ul>
+            <li><span class="highlight">收集內容</span>：宅主性別、出生年月日時、建房動土時間、流年時間。</li>
+            <li><span class="highlight">使用目的</span>：用於本地推算三元命卦、四柱八字、元運、流年紫白等傳統術數算法。</li>
+            <li><span class="highlight">存儲期限</span>：僅保存在您的設備本地，不會上傳。卸載應用即刪除。</li>
+        </ul>
+        <h3>2.4 購買記錄</h3>
+        <ul>
+            <li><span class="highlight">收集內容</span>：App 內購買（IAP）的解鎖狀態。</li>
+            <li><span class="highlight">使用目的</span>：用於驗證您是否已解鎖專業版功能，以提供對應服務。</li>
+            <li><span class="highlight">存儲方式</span>：通過 Apple StoreKit 2 進行驗證，購買憑證由 Apple 管理。我們僅在您的設備本地記錄"已解鎖"狀態，不收集您的支付信息。</li>
+        </ul>
+        <h3>2.5 我們不會收集的信息</h3>
+        <ul>
+            <li>我們不會收集您的姓名、手機號碼、通訊錄、短信、健康數據、生物識別信息。</li>
+            <li>我們不會使用任何第三方廣告 SDK、統計 SDK 或追蹤工具。</li>
+            <li>我們不會將您的任何數據出售或共享給第三方。</li>
+        </ul>
+
+        <h2>三、我們如何使用 Cookie 和同類技術</h2>
+        <p>本應用為原生 iOS 應用，不使用 Cookie。我們僅使用本地存儲（UserDefaults）在您的設備本地存儲以下偏好設置：</p>
+        <ul>
+            <li>語言選擇（簡體 / 繁體）</li>
+            <li>羅盤測量基準偏好（真北 / 磁北）</li>
+            <li>專業版解鎖狀態</li>
+        </ul>
+        <p>上述數據均僅存儲在您的設備本地，不會上傳。</p>
+
+        <h2>四、我們如何共享、轉讓、公開披露您的個人信息</h2>
+        <h3>4.1 共享</h3>
+        <p>我們不會與任何公司、組織和個人共享您的個人信息，但以下情況除外：</p>
+        <ul>
+            <li>在獲取明確同意的情況下共享；</li>
+            <li>根據法律法規規定、訴訟爭議解決需要，或行政、司法等有權機關依法提出的要求。</li>
+        </ul>
+        <h3>4.2 轉讓</h3>
+        <p>我們不會將您的個人信息轉讓給任何公司、組織和個人，但以下情況除外：</p>
+        <ul>
+            <li>在獲取明確同意的情況下轉讓；</li>
+            <li>在涉及合併、收購或破產清算時，如涉及到個人信息轉讓，我們會要求新的持有您個人信息的公司、組織繼續受此隱私政策的約束。</li>
+        </ul>
+        <h3>4.3 公開披露</h3>
+        <p>我們僅會在以下情況下，公開披露您的個人信息：</p>
+        <ul>
+            <li>獲得您明確同意後；</li>
+            <li>基於法律的披露：在法律、法律程序、訴訟或政府主管部門強制性要求的情況下。</li>
+        </ul>
+
+        <h2>五、我們如何保護您的個人信息</h2>
+        <h3>5.1 安全措施</h3>
+        <ul>
+            <li>所有數據處理均在您的設備本地完成，不經過網絡傳輸，從根本上降低了數據洩露風險。</li>
+            <li>我們採用 iOS 系統提供的安全沙盒機制隔離應用數據。</li>
+            <li>應用內購買通過 Apple StoreKit 2 進行，支付安全由 Apple 保障。</li>
+        </ul>
+        <h3>5.2 安全事件處置</h3>
+        <p>若發生個人信息安全事件，我們將按照法律法規的要求，及時向您告知：安全事件的基本情況和可能的影響、我們已採取或將要採取的處置措施、您可自主防範和降低風險的建議等。我們將及時將事件相關情況以推送通知、郵件等方式告知您。同時，我們還將按照監管部門要求，主動上報個人信息安全事件的處置情況。</p>
+
+        <h2>六、您的權利</h2>
+        <h3>6.1 訪問、更正、刪除</h3>
+        <p>由於本應用的所有數據均存儲在您的設備本地，您可以通過以下方式管理您的數據：</p>
+        <ul>
+            <li><span class="highlight">刪除數據</span>：卸載本應用即可刪除所有本地存儲的數據（包括戶型圖、宅主信息、偏好設置等）。</li>
+            <li><span class="highlight">撤回授權</span>：您可以在 iOS 系統「設置」→「隱私與安全性」中隨時關閉位置、相機、相冊權限。關閉後，對應功能將無法使用，但不影響其他功能。</li>
+        </ul>
+        <h3>6.2 註銷賬戶</h3>
+        <p>本應用無賬戶系統，無需註銷。卸載應用即視為放棄所有本地數據。</p>
+        <h3>6.3 響應您的請求</h3>
+        <p>如需行使上述權利或有任何疑問，請通過郵箱 3645065265@qq.com 與我們聯繫。我們將在 15 個工作日內回復您的請求。</p>
+
+        <h2>七、我們如何處理未成年人的個人信息</h2>
+        <p>本應用面向成年人用戶。我們不會主動收集未成年人的個人信息。若您是未滿 14 週歲的兒童，請在監護人的陪同下閱讀本政策，並在取得監護人同意後使用本應用。</p>
+
+        <h2>八、您的個人信息如何在全球範圍轉移</h2>
+        <p>由於本應用的所有數據均在您的設備本地處理，不涉及跨境數據傳輸。若您在中國大陸以外的地區使用本應用，您的數據仍保存在您的設備本地，不會傳輸至我們的服務器。</p>
+
+        <h2>九、本隱私政策如何更新</h2>
+        <p>我們可能會適時對本隱私政策進行修訂。未經您明確同意，我們不會削減您按照本隱私政策所應享有的權利。我們會在本應用內發布對本隱私政策所做的任何變更。對於重大變更，我們還會提供更為顯著的通知（如應用內彈窗提示）。</p>
+        <p>本隱私政策所指的重大變更包括但不限於：</p>
+        <ul>
+            <li>我們的服務模式發生重大變化；</li>
+            <li>個人信息共享、轉讓或公開披露的主要對象發生變化；</li>
+            <li>您參與個人信息處理方面的權利及其行使方式發生重大變化；</li>
+            <li>我們負責處理個人信息安全責任部門、聯絡方式及投訴渠道發生變化。</li>
+        </ul>
+
+        <h2>十、如何聯繫我們</h2>
+        <p>如果您對本隱私政策有任何疑問、意見或建議，通過以下方式與我們聯繫：</p>
+        <ul>
+            <li><strong>開發者：</strong>chenjunwu</li>
+            <li><strong>聯繫郵箱：</strong>3645065265@qq.com</li>
+        </ul>
+        <p>我們將在收到您的反饋後 15 個工作日內予以回復。</p>
+    </div>
+
+    <div class="footer">
+        <p id="footer-text">版权所有 © 2026 chenjunwu. 保留所有权利。</p>
+    </div>
+
+    <!-- 繁简切换 JS 逻辑 -->
+    <script>
+        let isTraditional = false;
+
+        function toggleLanguage() {
+            isTraditional = !isTraditional;
+
+            const hansDiv = document.getElementById('content-hans');
+            const hantDiv = document.getElementById('content-hant');
+            const switchBtn = document.getElementById('switchBtn');
+            const pageTitle = document.getElementById('page-title');
+            const footerText = document.getElementById('footer-text');
+            const dateLabel = document.getElementById('date-label');
+            const devLabel = document.getElementById('dev-label');
+            const emailLabel = document.getElementById('email-label');
+
+            if (isTraditional) {
+                hansDiv.style.display = 'none';
+                hantDiv.style.display = 'block';
+                switchBtn.innerText = '简体中文';
+                pageTitle.innerText = '陽宅羅盤 隱私政策';
+                footerText.innerText = '版權所有 © 2026 chenjunwu. 保留所有權利。';
+                dateLabel.innerHTML = '<strong>生效日期：</strong>2026年10月31日';
+                devLabel.innerHTML = '<strong>開發者：</strong>chenjunwu (個人開發者)';
+                emailLabel.innerHTML = '<strong>聯繫郵箱：</strong><a href="mailto:3645065265@qq.com">3645065265@qq.com</a>';
+            } else {
+                hansDiv.style.display = 'block';
+                hantDiv.style.display = 'none';
+                switchBtn.innerText = '繁體中文';
+                pageTitle.innerText = '阳宅罗盘 隐私政策';
+                footerText.innerText = '版权所有 © 2026 chenjunwu. 保留所有权利。';
+                dateLabel.innerHTML = '<strong>生效日期：</strong>2026年10月31日';
+                devLabel.innerHTML = '<strong>开发者：</strong>chenjunwu (个人开发者)';
+                emailLabel.innerHTML = '<strong>联系邮箱：</strong><a href="mailto:3645065265@qq.com">3645065265@qq.com</a>';
+            }
+        }
+    </script>
+</body>
+</html>
