@@ -28,9 +28,9 @@
     <!-- 简体中文版 -->
     <div id="content-hans" class="content">
         <h1>六爻研习录 隐私政策</h1>
-        <p class="date">生效日期：2026年10月30日</p>
+        <p class="date">生效日期：2026年11月1日</p>
 
-        <p>欢迎使用“六爻研习录”（以下简称“本应用”）。我们非常重视您的隐私。本隐私政策旨在向您说明我们如何处理您的信息。本应用为基于传统古籍的文化研习工具，<strong>我们不收集、不存储、不传输任何个人身份信息。</strong></p>
+        <p>欢迎使用“六爻研习录”（以下简称“本应用”）。我们非常重视您的隐私。本应用为基于传统古籍的**文化研习与学术查阅工具**。<strong>我们不收集、不存储、不传输任何个人身份信息，也不提供任何占卜预测、吉凶决策服务。</strong></p>
 
         <h2>1. 信息收集与使用</h2>
         <p>本应用为<strong>完全离线</strong>的工具。您在本应用中输入的所有数据（包括但不限于起卦时间、摇卦结果、手动录入的卦象数据）以及生成的记录，均<strong>仅存储在您的本地设备（iPhone/iPad）中</strong>。</p>
@@ -44,7 +44,7 @@
 
         <h2>4. 免责声明</h2>
         <div class="highlight">
-            <p>本应用所有内容基于《周易》等传统文化规则推演，仅供传统文化研究与娱乐参考，不构成任何投资、理财、医疗、法律、婚姻、出行或其他决策依据。</p>
+            <p><strong>本工具仅用于传统易学古籍文化研究，不提供占卜预测服务。</strong>本应用所有内容基于古籍文献与五行规则记载，仅供传统文化研究与学术参考，不构成任何投资、理财、医疗、法律、婚姻、出行或其他现实决策依据。</p>
             <p>请理性看待，抵制封建迷信，崇尚科学，切勿沉迷。使用者据此操作，风险自担。</p>
         </div>
 
@@ -59,9 +59,9 @@
     <!-- 繁体中文版 -->
     <div id="content-hant" class="content">
         <h1>六爻研習錄 隱私政策</h1>
-        <p class="date">生效日期：2026年10月30日</p>
+        <p class="date">生效日期：2026年11月1日</p>
 
-        <p>歡迎使用「六爻研習錄」（以下簡稱「本應用」）。我們非常重視您的隱私。本隱私政策旨在向您說明我們如何處理您的信息。本應用為基於傳統古籍的文化研習工具，<strong>我們不收集、不存儲、不傳輸任何個人身份信息。</strong></p>
+        <p>歡迎使用「六爻研習錄」（以下簡稱「本應用」）。我們非常重視您的隱私。本應用為基於傳統古籍的**文化研習與學術查閱工具**。<strong>我們不收集、不存儲、不傳輸任何個人身份信息，也不提供任何占卜預測、吉凶決策服務。</strong></p>
 
         <h2>1. 信息收集與使用</h2>
         <p>本應用為<strong>完全離線</strong>的工具。您在本應用中輸入的所有數據（包括但不限於起卦時間、搖卦結果、手動錄入的卦象數據）以及生成的記錄，均<strong>僅存儲在您的本地設備（iPhone/iPad）中</strong>。</p>
@@ -75,7 +75,7 @@
 
         <h2>4. 免責聲明</h2>
         <div class="highlight">
-            <p>本應用所有內容基於《周易》等傳統文化規則推演，僅供傳統文化研究與娛樂參考，不構成任何投資、理財、醫療、法律、婚姻、出行或其他決策依據。</p>
+            <p><strong>本工具僅用於傳統易學古籍文化研究，不提供占卜預測服務。</strong>本應用所有內容基於古籍文獻與五行規則記載，僅供傳統文化研究與學術參考，不構成任何投資、理財、醫療、法律、婚姻、出行或其他現實決策依據。</p>
             <p>請理性看待，抵制封建迷信，崇尚科學，切勿沉迷。使用者據此操作，風險自擔。</p>
         </div>
 
@@ -89,16 +89,11 @@
 
     <script>
         function switchLang(lang) {
-            // 切换内容显示
             document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
             document.getElementById('content-' + lang).classList.add('active');
-            
-            // 切换按钮状态
             document.querySelectorAll('.lang-switch button').forEach(el => el.classList.remove('active'));
             document.getElementById('btn-' + lang).classList.add('active');
         }
-
-        // 自动检测系统语言
         function autoDetectLang() {
             const userLang = navigator.language || navigator.userLanguage;
             if (userLang.includes('TW') || userLang.includes('HK') || userLang.includes('Hant')) {
@@ -107,8 +102,6 @@
                 switchLang('hans');
             }
         }
-
-        // 页面加载时执行检测
         window.onload = autoDetectLang;
     </script>
 </body>
